@@ -26,3 +26,8 @@ def to_date(value: str) -> Optional[date]:
         return datetime.strptime(value, "%d/%m/%Y").date()
     except ValueError:
         return None
+
+
+def to_age(value: str) -> int:
+    value = findall(r"[0-9]{1,2}", value)[0]
+    return int(value)
