@@ -2,7 +2,7 @@ from abc import ABCMeta, abstractmethod
 from re import findall
 from typing import Iterable, List, Optional
 
-from crawler.cast import to_color, to_date, to_age
+from crawler.cast import to_age, to_color, to_date
 from crawler.typing import Cast, FieldValue
 
 
